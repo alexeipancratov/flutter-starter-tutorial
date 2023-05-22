@@ -1,6 +1,6 @@
-# flutter_application_1
+# Flutter Starter Tutorial
 
-A new Flutter project.
+A Flutter project created for learning purposes.
 
 ## Getting Started
 
