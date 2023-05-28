@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/intro_screen.dart';
 
 void main() {
-  runApp(GlobeApp());
+  runApp(const GlobeApp());
 }
 
 class GlobeApp extends StatelessWidget {
@@ -9,8 +10,8 @@ class GlobeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Center(child: Text('Hello World!')),
-    );
+    return MaterialApp(
+        theme: ThemeData(primarySwatch: Colors.blueGrey),
+        home: const IntroScreen());
   }
 }
