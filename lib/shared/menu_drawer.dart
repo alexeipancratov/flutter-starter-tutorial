@@ -39,13 +39,14 @@ class MenuDrawer extends StatelessWidget {
         onTap: () {
           switch (element) {
             case 'Home':
-              screen = IntroScreen();
+              screen = const IntroScreen();
               break;
             case 'BMI Calculator':
-              screen = BmiScreen();
+              screen = const BmiScreen();
               break;
           }
-          Navigator.of(context).pop;
+          Navigator.of(context).pop; // so that navbar dissapears for next time when we'll go back to this route
+          // Here we're using unnamed routes
           Navigator.of(context).push(
             MaterialPageRoute(builder: (context) => screen)
           );
