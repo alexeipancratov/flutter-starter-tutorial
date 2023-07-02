@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/bmi_screen.dart';
 import 'package:flutter_application_1/screens/intro_screen.dart';
+import 'package:flutter_application_1/screens/weather_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -43,6 +44,9 @@ class MenuDrawer extends StatelessWidget {
               break;
             case 'BMI Calculator':
               screen = const BmiScreen();
+              break;
+            case 'Weather':
+              screen = const WeatherScreen();
               break;
           }
           Navigator.of(context).pop; // so that navbar dissapears for next time when we'll go back to this route
